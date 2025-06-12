@@ -6,7 +6,7 @@ class TurtlePathIntersection {
     public static boolean hasPathIntersection(String path) {
         int x = 0; // Координата по x
         int y = 0; // Координата по y
-        ArrayList<String> list = new ArrayList<>(); // Объявляем список содержащий пройденные координаты 
+        ArrayList<String> list = new ArrayList<>(); // Объявляем список, содержащий пройденные координаты 
         
         list.add("0,0"); // Добавляем начальные координаты
         
@@ -45,9 +45,8 @@ class TurtlePathIntersection {
         System.out.println("This program determines whether the turtle has crossed its trajectory or not.");
         System.out.print("Enter the turtle's route (Example: uullrdrd): "); // Запрос пользователю
         String inputString = scanner.nextLine(); // Считываем строку, введенную пользователем
-        //System.out.println(inputString);
         boolean result = hasPathIntersection(inputString);
-        System.out.println(result);
+        System.out.println("The turtle crossed its trajectory - " + result);
         
         scanner.close(); // Закрываем сканер после использования
     }
